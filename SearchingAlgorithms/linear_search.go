@@ -1,8 +1,6 @@
 package SearchingAlgorithms
 
 /*
-Linear Search :
-
 Linear Search is a brute force method to search for an element in an array. It
 will search throughout the array, element by element until it finds the element
 to be searched. Time complexity of Linear search is O(n), that is, it is a
