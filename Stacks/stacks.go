@@ -6,7 +6,10 @@ It counts the number of elements in the array and points the last element added 
 */
 package Stacks
 
-import "fmt"
+import (
+	"fmt"
+	"github.com/datdhruvjain/GoDSA/SearchingAlgorithms"
+)
 
 var stack = make([]int, 5)
 var t int = -1
@@ -42,4 +45,10 @@ func Top() int {
 		return stack[t]
 	}
 	return 0
+}
+
+func Search(x int) int {
+	s := make([]int, len(stack)-1)
+	copy(s, stack)
+	return SearchingAlgorithms.BinarySearch(s, x)
 }
