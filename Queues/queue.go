@@ -15,6 +15,8 @@ Remember:
 */
 package Queues
 
+import "fmt"
+
 var size int = 5
 
 var q = make([]int, size)
@@ -34,9 +36,11 @@ q[1 2 3 4 -]
 Head still has value -1, tail has value q[3]
 */
 func Enqueue(e int) {
-	if tail != size {
+	if tail != size-1 {
 		tail++
 		q[tail] = e
+	} else {
+		fmt.Printf("Array full, cannot add element %v\n", e)
 	}
 }
 
@@ -52,10 +56,20 @@ q[- - 3 4 -]
 Head has value 2 and points to q[2] = 3, tail has value q[3]
 */
 func Dequeue() int {
-	if head > 0 {
+	if tail > 0 {
 		head++
 		temp := q[head]
 		return temp
+	} else {
+		fmt.Println("Array emppty, cannot get any element, returning -1")
+		return -1
 	}
-	return 0
+}
+
+// Function to check the next element to take out
+func Peek() int {
+	if tail > 0 {
+		return q[head+1]
+	}
+	return -1
 }
