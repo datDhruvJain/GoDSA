@@ -17,6 +17,29 @@ package Queues
 
 import "fmt"
 
+/*
+type Queue struct {
+	size int
+	q  []int
+	head int
+	tail int
+}
+
+func NewQueue() *Queue {
+	return &Queue{}
+}
+
+
+
+func (q *Queue) Q() []int {
+	return q.q
+}
+
+func (q *Queue) SetQ(q []int) {
+	q.q = q
+}
+*/
+
 var size int = 5
 
 var q = make([]int, size)
