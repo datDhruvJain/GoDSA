@@ -1,6 +1,7 @@
 // TODo : add better documentation for stacks
 
 /*
+Package Stacks Implements Array based stacks and it's functions.
 Remember : The variable t is a pointer AND a counter.
 It counts the number of elements in the array and points the last element added to the array
 */
@@ -15,7 +16,9 @@ type IntStack struct {
 	t     int
 }
 
-// New creates new stack of integer type
+/*
+New creates new stack of integer type and returns it's address (Also use pointers, Am I cool now? :) )
+*/
 func (is IntStack) New(size int) *IntStack {
 	return &IntStack{make([]int, size), -1}
 }
