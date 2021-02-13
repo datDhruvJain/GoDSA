@@ -5,4 +5,4 @@ The methods in this package are : Linear search and Binary Search
 
 
 */
-package SearchingAlgorithms
+package searchingalgorithms

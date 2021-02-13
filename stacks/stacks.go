@@ -1,11 +1,11 @@
 // TODo : add better documentation for stacks
 
 /*
-Package Stacks Implements Array based stacks and it's functions.
+Package stacks Implements Array based stacks and it's functions.
 Remember : The variable t is a pointer AND a counter.
 It counts the number of elements in the array and points the last element added to the array
 */
-package Stacks
+package stacks
 
 import (
 	"fmt"

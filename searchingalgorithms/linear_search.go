@@ -1,4 +1,4 @@
-package SearchingAlgorithms
+package searchingalgorithms
 
 /*
 Linear Search is a brute force method to search for an element in an array. It

@@ -1,4 +1,4 @@
-package SortingAlgorithms
+package sortingalgorithms
 
 // TODo : Write good documentation for this
 

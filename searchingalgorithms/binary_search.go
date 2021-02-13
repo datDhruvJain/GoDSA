@@ -1,4 +1,4 @@
-package SearchingAlgorithms
+package searchingalgorithms
 
 /*
 The time complexity for this Search is O(log2(n)).

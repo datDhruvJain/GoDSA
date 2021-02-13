@@ -1,7 +1,7 @@
-package SearchingAlgorithms
+package searchingalgorithms
 
 import (
-	"github.com/datdhruvjain/GoDSA/SortingAlgorithms"
+	"github.com/datdhruvjain/GoDSA/sortingalgorithms"
 	"testing"
 )
 
@@ -10,7 +10,7 @@ func TestBinarySearch(t *testing.T) {
 	var x int = 9
 
 	// Having a sorted array is necessary for Binary search to work
-	SortingAlgorithms.BubbleSort(arr)
+	sortingalgorithms.BubbleSort(arr)
 
 	if BinarySearch(arr, x) != 8 {
 		t.Log("Array index returned should have been 8 for this test")
