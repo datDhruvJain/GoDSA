@@ -18,7 +18,7 @@ func TestEnqueue(t *testing.T) {
 }
 
 func TestDequeue(t *testing.T) {
-	
+
 	Enqueue(1)
 	Enqueue(2)
 	Enqueue(3)

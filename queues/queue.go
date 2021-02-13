@@ -1,5 +1,5 @@
 /*
-Queues follow a FILO: First in Last out Structure.
+queues follow a FILO: First in Last out Structure.
 
 HEAD -> The counter/pointer that points to the starting of the data elements.
 TAIL -> The counter/pointer that points to the end of the data elements. New elements are added to the tail
