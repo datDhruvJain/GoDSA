@@ -1,4 +1,4 @@
-package Queues
+package queues
 
 import "testing"
 
@@ -18,15 +18,18 @@ func TestEnqueue(t *testing.T) {
 }
 
 func TestDequeue(t *testing.T) {
+	
 	Enqueue(1)
 	Enqueue(2)
 	Enqueue(3)
-	if Dequeue() != 1 {
-		t.Log("Should be equal to 1")
-		t.Fail()
+	got := Dequeue()
+	want := 1
+	if got != want {
+		t.Errorf("got: %v, want: %v", got, want)
 	}
-	if Dequeue() != 2 {
-		t.Log("Should be equal to 2")
-		t.Fail()
+	got = Dequeue()
+	want = 2
+	if got != want {
+		t.Errorf("got: %v, want: %v", got, want)
 	}
 }

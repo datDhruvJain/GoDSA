@@ -2,7 +2,7 @@
 A Circular queue is a queue, in which the head and tail go round and round, not wasting any space
 we need to look this up and write code for it
 */
-package Queues
+package queues
 
 import "fmt"
 
@@ -28,11 +28,11 @@ type CircularQueue struct {
 }
 
 func New() *CircularQueue {
-	cq := CircularQueue{new([]int), -1, -1}
-	//var cq CircularQueue
-	//*cq.queue = new([]int)
-	//cq.front = -1
-	//cq.rear = -1
+	//cq := CircularQueue{new([]int), -1, -1}
+	var cq CircularQueue
+	cq.queue = new([]int)
+	cq.front = -1
+	cq.rear = -1
 	return &cq
 }
 

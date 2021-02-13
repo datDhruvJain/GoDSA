@@ -1,4 +1,4 @@
-package Queues
+package queues
 
 import "testing"
 
@@ -21,5 +21,9 @@ func TestCircularQueue(t *testing.T) {
 	c.printinfo()
 	c.printinfo()
 	c.printinfo()
+
+	var p *[]int
+	p = new([]int)
+	*p = make([]int, 10)
 
 }

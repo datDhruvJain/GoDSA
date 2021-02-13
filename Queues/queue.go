@@ -13,7 +13,7 @@ Remember:
 	2. The tail will most of the times point to an empty element.
 	3. New elements are added to the tail.
 */
-package Queues
+package queues
 
 import "fmt"
 
