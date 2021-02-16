@@ -18,6 +18,9 @@ also full if front = len -1 and rear ==0
 Empty:
 empty if both pointers are pointing to the same element */
 
+
+//CircularQueue is a schema for circular queues.
+// Create a new instance with CircularQueue.New() 
 type CircularQueue struct {
 	queue *[]int
 
@@ -27,6 +30,7 @@ type CircularQueue struct {
 	rear int
 }
 
+// New creates a new instance of the Circular queue struct
 func New() *CircularQueue {
 	//cq := CircularQueue{new([]int), -1, -1}
 	var cq CircularQueue
@@ -36,6 +40,7 @@ func New() *CircularQueue {
 	return &cq
 }
 
+// isFull checks if the circular queue is full
 func (c *CircularQueue) isFull() bool {
 	if c.front+1 == c.rear || (c.front == len(*c.queue)-1 && c.rear == 0) {
 		return true
@@ -43,6 +48,7 @@ func (c *CircularQueue) isFull() bool {
 	return false
 }
 
+// isEmpty checks if the circular queue is empty
 func (c *CircularQueue) isEmpty() bool {
 	if c.front == c.rear {
 		return true
