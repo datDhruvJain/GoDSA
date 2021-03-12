@@ -20,10 +20,7 @@ func Insert(head *sllnode, data int, index int) error {
 
 	if count == 0 && index == 0 {
 		head = &sllnode{data, nil}
-	}
-	if head == nil {
-		return errors.New("head of the linked list is nil")
-	}
+	} 
 
 	var temp *sllnode = head
 
